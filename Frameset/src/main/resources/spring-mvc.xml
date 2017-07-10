@@ -34,6 +34,8 @@
 		p:basename="i18n/messages" />
 
 	<mvc:default-servlet-handler />
+	<mvc:resources mapping="/resources/frameset/**" location="/resources/frameset/" cache-period="31536000"/>
+	<mvc:resources mapping="/resources/js/**" location="/resources/js/" cache-period="31536000"/>
 	
 	<mvc:annotation-driven>
 		<mvc:message-converters register-defaults="true">
@@ -46,13 +48,13 @@
 				</property>
 			</bean>
 		</mvc:message-converters>
+		<!-- <mvc:path-matching suffix-pattern="true"/> -->
 	</mvc:annotation-driven>
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/view/" />
-		<property name="suffix" value=""/>
-		<property name="order" value="0"/>
+		<property name="suffix" value=".jsp"/>
 	</bean>
     
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
