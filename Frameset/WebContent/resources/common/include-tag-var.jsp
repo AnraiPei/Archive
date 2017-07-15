@@ -4,11 +4,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
-<%@ taglib uri="/WEB-INF/tlds/sitemesh-decorator.tld" prefix="decorator"%>
-<%@ taglib uri="/WEB-INF/tlds/sitemesh-page.tld" prefix="page"%>
-<!-- <@ taglib uri='/WEB-INF/tlds/core-elutil.tld' prefix='elutil'%>
-<@ taglib uri='/WEB-INF/tlds/core-pager.tld' prefix='pager'%>
-<@ taglib uri='/WEB-INF/tlds/core-info.tld' prefix='info'%> -->
 
 
 <c:set var="_ContextPath" value="${pageContext.request.contextPath}" />
