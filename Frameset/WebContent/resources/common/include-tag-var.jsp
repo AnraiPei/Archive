@@ -9,10 +9,12 @@
 <c:set var="_ContextPath" value="${pageContext.request.contextPath}" />
 <c:set var="_FrameworkPath" value="${pageContext.request.contextPath }/resources/framework" />
 <c:set var="_JSPath" value="${pageContext.request.contextPath }/resources/js" />
+<c:set var="_Module_Path" value="${pageContext.request.contextPath }/resources/js/module" />
 
 
 <script type="text/javascript">
 var _ContextPath = '${_ContextPath}';
 var _FrameworkPath = '${_FrameworkPath}';
 var _JSPath = '${_JSPath}';
+var _Module_Path = '${_Module_Path}';
 </script>
